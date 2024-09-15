@@ -7,5 +7,5 @@ import com.dio.desafio.api.nuvem.lab_banco.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    
+    boolean existsByAccountNumber(String accountNumber);
 }
